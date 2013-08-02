@@ -14,8 +14,6 @@ class WorkManager(object):
 			pid = pstr.readline()
 			if len(pid) == 0:
 				break
-                        if string.atoi(pid)<=105282:
-				continue
 			pid = pid.strip()
 			url=purl_prefix+pid+".html"
 			if pid!='':

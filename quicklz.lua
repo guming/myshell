@@ -1,11 +1,8 @@
-
 local ffi = require "ffi"
 if not ffi then
-  error("load ffi failed!")
+  error("load the ffi failed!")
   return
 end
---  $ gcc -P -E quicklz.h
--- after deleting some relevent code
 ffi.cdef[[
 typedef unsigned int ui32;
 typedef unsigned short int ui16;
